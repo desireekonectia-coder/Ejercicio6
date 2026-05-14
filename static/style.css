@@ -1,0 +1,63 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    color: rgb(213, 66, 169);
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:visited {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:active {
+    color: blueviolet;
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: none;
+    cursor: pointer; 
+}
+.priority{
+    font-weight: bolder;
+    background-color: rgba(248, 156, 90, 0.792);
+    padding: 5px;
+    border-radius: 5px
+}
+#orderlist{
+    padding: 10px 0 10px 0;
+    border: solid 2px black;
+
+}
+section ol li{
+    color:rgb(99, 39, 39);
+}
+
+section ul li {
+    color:rgb(151, 16, 224)
+}
+.card {
+border: 5px solid black;
+padding: 10px;
+margin: 10px;
+box-sizing: border-box;
+max-width: 400px;
+box-shadow: 10px 20px 30px crimson;
+}
+.carddestacada {
+border: 5px solid black;
+padding: 10px;
+margin: 10px;
+box-sizing: border-box;
+max-width: 400px;
+box-shadow: 10px 20px 30px crimson;
+background-color:purple;
+}
