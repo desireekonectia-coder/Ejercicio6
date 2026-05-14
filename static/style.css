@@ -1,63 +1,110 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: beige;
-    color: rgb(213, 66, 169);
+    background-color: #fdfaf0; 
+    color: #4a0e2e; 
+    display: grid;
+    gap: 5px;
+}
+
+p{
+    color: #4a0e2e; 
 }
 
 h1, h2, h3 {
-    color: black;
+    color: #2a0717; 
 }
 
 a:link {
-    color: black;
+    color: #4a0e2e; 
     text-decoration: none;
     cursor: pointer;
 }
 a:visited {
-    color: red;
+    color: #7a3e5e; 
     text-decoration: none;
     cursor: pointer;
 }
 a:active {
-    color: blueviolet;
+    color: #ba68c8;
 }
 a:hover{
-    color: blueviolet;
-    text-decoration: none;
-    cursor: pointer; 
+    color: #8e24aa; 
+    text-decoration: none; 
+    cursor: pointer;
 }
 .priority{
     font-weight: bolder;
-    background-color: rgba(248, 156, 90, 0.792);
+    background-color: #fdfaf0;
     padding: 5px;
     border-radius: 5px
 }
 #orderlist{
     padding: 10px 0 10px 0;
-    border: solid 2px black;
+    border: solid 4px black;
 
 }
 section ol li{
-    color:rgb(99, 39, 39);
+    color:rgb(119, 50, 50);
 }
 
 section ul li {
-    color:rgb(151, 16, 224)
+    color: #6a1b9a; 
 }
 .card {
+border-radius: 10px;
 border: 5px solid black;
 padding: 10px;
 margin: 10px;
 box-sizing: border-box;
 max-width: 400px;
-box-shadow: 10px 20px 30px crimson;
+box-shadow: 5px 10px 15px rgba(220, 20, 60, 0.2); 
+min-width: 100px;
 }
 .carddestacada {
+border-radius: 10px;
 border: 5px solid black;
 padding: 10px;
 margin: 10px;
 box-sizing: border-box;
 max-width: 400px;
-box-shadow: 10px 20px 30px crimson;
-background-color:purple;
+box-shadow: 5px 10px 15px rgba(128, 0, 128, 0.3); 
+background-color: #6a1b9a; 
+color: #fdfaf0; 
+min-width: 100px;
+}
+nav{
+    display: flex;
+    gap: 20px; 
+    padding: 15px;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    /* 
+       INVESTIGACIÓN: flex-wrap: wrap permite que si los elementos 
+       hijos no caben en el ancho actual, salten a la siguiente "fila",
+       comportándose visualmente como columnas en pantallas pequeñas.
+    */
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 20px;
+}
+.galeria{
+    display: grid;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 10px;
+
+    /* Punto 7: Definición de 3 columnas y 2 filas para la galería */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas de igual altura */
+}
+
+/* Punto 7: Estilo distintivo para cada imagen de la galería */
+.galeria img {
+    border: 3px solid black; 
+    border-radius: 8px; 
+   
 }
