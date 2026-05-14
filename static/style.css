@@ -108,3 +108,10 @@ nav{
     border-radius: 8px; 
    
 }
+
+footer{
+    display: flex;
+    gap: 20px; 
+    padding: 15px;
+    background-color: rgba(0,0,0,0.05);
+}
